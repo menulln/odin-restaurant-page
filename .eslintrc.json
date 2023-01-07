@@ -11,5 +11,19 @@
         "sourceType": "module"
     },
     "rules": {
+        "no-console": "warn",
+        "no-plusplus": "warn",
+        "no-param-reassign": "warn",
+        "no-underscore-dangle": "warn",
+        "no-use-before-define": "warn",
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "indent": [
+            "error",
+            "space",
+            { "SwitchCase": 1 }
+        ]
     }
 }
