@@ -93,8 +93,26 @@ function drawContent() {
 		secondDish.appendChild(descriptionSecond);
 	}
 
+	function drawLogos() {
+		const logos = document.createElement('div');
+		const peta = document.createElement('img');
+		const green = document.createElement('img');
+		const vegan = document.createElement('img');
+
+		logos.classList.add('logo-section');
+		peta.src = '../src/img/logos/peta.png';
+		green.src = '../src/img/logos/greenpeace.png';
+		vegan.src = '../src/img/logos/vegan.webp';
+
+		main.appendChild(logos);
+		logos.appendChild(peta);
+		logos.appendChild(green);
+		logos.appendChild(vegan);
+	}
+
 	drawHero();
 	drawDishes();
+	drawLogos();
 }
 
 drawHeader();
