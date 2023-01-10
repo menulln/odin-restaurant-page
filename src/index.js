@@ -53,7 +53,48 @@ function drawContent() {
 		hero.appendChild(p);
 	}
 
+	function drawDishes() {
+		const dishes = document.createElement('div');
+		const firstDish = document.createElement('div');
+		const secondDish = document.createElement('div');
+		const imgFirst = document.createElement('img');
+		const imgSecond = document.createElement('img');
+		const descriptionFirst = document.createElement('p');
+		const descriptionSecond = document.createElement('p');
+
+		dishes.classList.add('dishes-section');
+		firstDish.classList.add('01');
+		secondDish.classList.add('02');
+		imgFirst.src = '../src/img/dishes/01.webp';
+		imgSecond.src = '../src/img/dishes/02.png';
+		descriptionFirst.textContent = `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+										Vel amet doloremque odit facilis odio, mollitia quas voluptates 
+										placeat provident laborum aspernatur consequuntur esse dicta eaque 
+										corporis nobis. Eveniet, quos laboriosam? 
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+										Vel amet doloremque odit facilis odio, mollitia quas voluptates 
+										placeat provident laborum aspernatur consequuntur esse dicta eaque 
+										corporis nobis. Eveniet, quos laboriosam.`;
+		descriptionSecond.textContent = `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+										 Vel amet doloremque odit facilis odio, mollitia quas voluptates 
+									 	 placeat provident laborum aspernatur consequuntur esse dicta eaque 
+										 corporis nobis. Eveniet, quos laboriosam. 
+										 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+										 Vel amet doloremque odit facilis odio, mollitia quas voluptates 
+										 placeat provident laborum aspernatur consequuntur esse dicta eaque 
+										 corporis nobis. Eveniet, quos laboriosam?`;
+
+		main.appendChild(dishes);
+		dishes.appendChild(firstDish);
+		dishes.appendChild(secondDish);
+		firstDish.appendChild(imgFirst);
+		firstDish.appendChild(descriptionFirst);
+		secondDish.appendChild(imgSecond);
+		secondDish.appendChild(descriptionSecond);
+	}
+
 	drawHero();
+	drawDishes();
 }
 
 drawHeader();
