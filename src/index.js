@@ -7,6 +7,10 @@ drawContent();
 
 let activeTab = 'home';
 
+function clearScreen() {
+	document.querySelector('main').remove();
+}
+
 function addListeners() {
 	const home = document.querySelector('.home');
 	const menu = document.querySelector('.menu');
