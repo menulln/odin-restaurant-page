@@ -84,3 +84,27 @@ li > a {
     color: #fff;
     text-shadow: 2px 2px 5px #000;
 }
+
+.dishes-section {
+    padding: 2.5%;
+}
+
+.dishes-section > div > img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.dishes-section > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dishes-section > div:last-of-type {
+    flex-flow: row-reverse;
+}
+
+.dishes-section > div > p {
+    padding: 0 10%;
+}
