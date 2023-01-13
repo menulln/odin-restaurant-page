@@ -154,3 +154,11 @@ li > a {
     font-weight: bold;
     font-size: 1.15rem;
 }
+
+.menu-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 2.5%;
+}
