@@ -19,6 +19,22 @@ function addListeners() {
 			activeTab = 'home';
 		}
 	});
+
+	menu.addEventListener('click', () => {
+		if (activeTab !== 'menu') {
+			clearScreen();
+			drawMenuScreen();
+			activeTab = 'menu';
+		}
+	});
+
+	contact.addEventListener('click', () => {
+		if (activeTab !== 'contact') {
+			clearScreen();
+			drawContactScreen();
+			activeTab = 'contact';
+		}
+	});
 }
 
 addListeners();
