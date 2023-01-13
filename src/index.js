@@ -1,4 +1,6 @@
 import { drawHeader, drawContent } from './home';
+import drawMenuScreen from './menu';
+import drawContactScreen from './contact';
 
 drawHeader();
 drawContent();
